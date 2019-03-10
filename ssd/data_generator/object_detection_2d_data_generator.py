@@ -480,7 +480,7 @@ class DataGenerator:
                     with open(os.path.join(annotations_dir, image_id + '.xml')) as f:
                         soup = BeautifulSoup(f, 'xml')
 
-                    folder = soup.folder.text # In case we want to return the folder in addition to the image file name. Relevant for determining which dataset an image belongs to.
+                    # folder = soup.folder.text # In case we want to return the folder in addition to the image file name. Relevant for determining which dataset an image belongs to.
                     #filename = soup.filename.text
 
                     boxes = [] # We'll store all boxes for this image here.
